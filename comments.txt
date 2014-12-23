@@ -5,3 +5,16 @@
   For example, the images directory is c:\node\hackberry\public\images … 
   but it is accessed at http://localhost:3000/images
 
+5. tell Express what route files to use (to keep things simple, we're going to do everything in the index router)
+  
+  Advice: set up separate route files for different parts of your app. 
+  For example, 
+    the users route file might contain routes for adding users, deleting them, updating them, and so forth, 
+    while a new route file called "locations" might handle adding, editing, deleting and displaying location data (in an app for which that was required).
+
+6. the Express scaffolding defines the "routes" variable to be pointed at the index router ('/'). 
+7. bring in our Express functionality
+8. attach a "router" variable to Express's router method
+9. use the Express's router method when an attempt is made to HTTP-get the top level directory of our website
+10. export our router function back to our app.
+
