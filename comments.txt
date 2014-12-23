@@ -17,4 +17,7 @@
 8. attach a "router" variable to Express's router method
 9. use the Express's router method when an attempt is made to HTTP-get the top level directory of our website
 10. export our router function back to our app.
-
+11. use (or "extend") the file layout.jade as a template
+12. within the content block defined in the layout.jade file, it sticks a header and a paragraph. 
+13. the "title" variable was set above, in our index.js route.
+14. set the "title" variable (property) for the jade
