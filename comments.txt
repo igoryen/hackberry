@@ -1,0 +1,7 @@
+1. instantiate Express and assign your app variable to it. this variable is used to configure a bunch of Express stuff.
+2. tells the app the location of its views
+3. tells the app what engine to use to render those views (Jade)
+4. tells Express to serve static objects (pages) from the /public/ dir, but to make them actually seem like they're coming from the top level (it also does this with the views directory). 
+  For example, the images directory is c:\node\hackberry\public\images … 
+  but it is accessed at http://localhost:3000/images
+
