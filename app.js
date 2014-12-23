@@ -5,6 +5,10 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+var mongo = require('mongodb'); // 15
+var monk = require('monk'); // 16
+var db = monk('localhost:27017/nodetest1'); // 17
+
 var routes = require('./routes/index'); // 6
 var users = require('./routes/users');
 
@@ -22,6 +26,14 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public'))); // 4
 
+// Make our db accessible to our router
+// 19 
+app.use(function(req,res,next){
+  req.db = db;
+  next();
+});
+
+// 18
 app.use('/', routes); // 5
 app.use('/users', users);
 

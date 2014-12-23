@@ -21,3 +21,10 @@
 12. within the content block defined in the layout.jade file, it sticks a header and a paragraph. 
 13. the "title" variable was set above, in our index.js route.
 14. set the "title" variable (property) for the jade
+15. tell our app we want to talk to MongoDB
+16. tell our app we want to use Monk to talk to MongoDB
+17. the location of our database. It's our Monk connection object
+18. establish middleware for Express, i.e. provide custom functions that the rest of your app can make use of. Due to chaining this needs to come before our route definitions, so that they can make use of it
+19. we're adding the Monk connection object (-db-) to every HTTP request (ie: "req") our app makes. 
+  Note: this is probably sub-optimal for performance but, again, we're going quick-n-dirty here.
+

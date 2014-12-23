@@ -20,4 +20,6 @@ http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/
   C:\node\hackberry>mkdir data 
 # start the web server
   C:\node\hackberry>npm start
+
+# download MongoDB and install it in C:/mongo
    
