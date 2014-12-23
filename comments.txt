@@ -37,3 +37,7 @@
   passing our database documents to that variable.
 . Then we do a page render just like the other two "gets" in this route file.
 22. tell our app which collection we want to use ('usercollection') 
+23. pull in the set of documents we just called userlist over in the route file,
+  then for each entry (named 'user' during the loop), 
+  get the email and username values from the object and put them into our html. 
+  We've also got the count – i – handy in case we need it, though in this instance we don't.
